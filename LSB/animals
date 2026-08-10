@@ -1,3 +1,5 @@
+# testfile
+Don't know the content
 # Linux Command learning record 
 ## 2026-8-7
 ### file and directory operations
@@ -32,3 +34,13 @@ A1: The click is hidden by default and usually stores the configuration.
 A2: Use ls -d directory/.
 ### It will be verified next week
 
+## 2026-8-10
+### file and cat 
+| command | function | My understanding |
+| file [directory] | To know what type the file is | Display the description of the file content |
+| display mime type |
+| file -i [directory] | Display MIME type information |  |
+| file -b [directory] | in short mode, the file name is omitted in the output. |  |
+| file -L [directory] | Please follow the symbolic link. |  |
+| file -z [directory] | Try to check the compressed file. |  |
+ 
