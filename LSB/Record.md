@@ -84,3 +84,16 @@ Q: > overwrite file,>> Attached at the end of the file/.
 Q1: Is it better than a cat?
 A: cat used for short files, less long files or files that need to be searched.
 
+## 2026-8-11
+| command | function | my undestanding |
+|---------|----------|-----------------|
+| history | Check the lsit of commands you have used | View the history of uesd commands |
+| !! | Execute the latest command again | Eexcute the most recent command |
+| !number | Run by number | Use the command number in the history record |
+| !cat | Run by prefix | Used to run the latest commands starting with . |
+| Ctrl-R | Search your history | Start typing ant part of the commands you want, and the shell will display the most recent matches |
+| history -c | Clear the current history it | Remove all entries from the history list in memory |
+| history -w ~/.bash_history | Write the history into the file | Save the history of the current session to your history file. |
+| history -d <offset> | Delete specific entrices | Delete a command through its historical number |
+| clear | Clear the current interaction content |  |
+
