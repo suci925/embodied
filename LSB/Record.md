@@ -117,6 +117,7 @@ A: cat used for short files, less long files or files that need to be searched.
 ### The problem I encoutered today:
 Q1: Why  can't cp copy directory?
 A: The directory needs to be recursively copied.use 'cp -r source-dir destonation-dir.
+
 Q2: Should cp-r or cp -a be used for backup?
 A: 'cp -r' Used for simple recursice replication.It can be used 'cp -a' ,when you want a backup copy that saves more file attributes.
 
