@@ -97,3 +97,26 @@ A: cat used for short files, less long files or files that need to be searched.
 | history -d <offset> | Delete specific entrices | Delete a command through its historical number |
 | clear | Clear the current interaction content |  |
 
+## 2026-08-16
+### CP
+| Command | Function | My understanding |
+|---------|----------|------------------|
+| cp file1.txt file2.txt | Create a new copy while keeping the original file | Copy the content to a file or create a new file and copy its content |
+| cp myfile /home/susie/ | To copy a file, you need to specify the source file and the target diretory or path | Copy the file to the specified source file and target diretorty or path | 
+| cp file1 file2 file3 /home/susie | Copy multiple files to the directory | To copy multiple files to the same directory , first list all the sources and finally place them in the target directory |
+| cp *.txt /home/susie/files | Copy all txt files at the current location to the directory | Use the universal character for batch copying, '*' Match any sequence of character,'?'Match any single character , '[]' Match any character within the parenrheses. |
+| cp -r LSB_test/ /home/susie/LSB | Recursively copy the directory | Copy the dorectory and all its content to the specified directory. |
+| cp -R LSB_test /home/susie/LSB | It has the same recursive effect in a typical Linux system. |  |
+| cp -i  | Handle file overwriting | A confirmation prompt will be given before overwriting |
+| cp -f  | Handle file overwriting | If necessary ,remove the target node for forced overwriting first |
+| cp -n  | Handle file overwriting | Do not overwriting the existing files |
+| cp -p  | Retain the original attributes of the file. | Retain mode,ownership(as much as possible), and timestamp. |
+| cp -a  | It is often used for backup directory copies because it can recursively retain many attributers and copy. | The archiving mode helps to preserve the directory tree. |
+| cp -u  | Copy only when the source file is updated than the target file or the target file does not exist. | This very usrful when refreshing the folder without rewriting  that are already the latest version. |
+| cp -v  | Display the appearance of each file when it is copied. |  |
+### The problem I encoutered today:
+Q1: Why  can't cp copy directory?
+A: The directory needs to be recursively copied.use 'cp -r source-dir destonation-dir.
+Q2: Should cp-r or cp -a be used for backup?
+A: 'cp -r' Used for simple recursice replication.It can be used 'cp -a' ,when you want a backup copy that saves more file attributes.
+
